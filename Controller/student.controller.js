@@ -118,6 +118,7 @@ export const updateStudent = async (req, res) => {
     }
 
     if (req.body.name) student.name = req.body.name;
+    if(req.body.password) student.password=req.body.password;
     if (req.body.mobile) student.mobile = req.body.mobile;
     if (req.body.class) student.class = req.body.class;
     if (req.body.professionLogin)
