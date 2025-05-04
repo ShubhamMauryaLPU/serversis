@@ -21,7 +21,6 @@ export const createAdmin = async (req, res) => {
       password,
       professionLogin,
     });
-
     await newAdmin.save();
     res
       .status(201)
