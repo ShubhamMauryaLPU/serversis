@@ -23,7 +23,7 @@ const parent = new mongoose.Schema({
 });
 
 const StudentSchema = new mongoose.Schema({
-  id: { type: Number, required: true },
+  id: { type: Number, required: true,unique:true },
   name: { type: String, required: true },
   mobile: { type: String, required: true, unique: true },
   class: { type: String },
